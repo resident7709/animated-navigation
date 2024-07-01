@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Genos&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
 
-/*Retro Video Game Color Scheme*/
+/* * Retro Video Game Color Scheme */
 :root {
   --primaryColor: #b3b4b6;
   --navColor1: #2c2c2e;
@@ -13,12 +13,12 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Genos", sans-serif;
+  font-family: 'Genos', sans-serif;
   background-color: #000;
   margin: 0;
   /* overflow: hidden; */
 }
-/**Navigation**/
+/* * Navigation */
 .overlay {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -68,7 +68,7 @@ nav li a:hover {
 }
 nav li a::before {
   background-color: #fff;
-  content: "";
+  content: '';
   height: 3px;
   width: 25vw;
   position: absolute;
@@ -94,7 +94,7 @@ nav li:nth-of-type(4) {
 nav li:nth-of-type(5) {
   background-color: var(--navColor5);
 }
-/**Slide in animation with delay for each nav item**/
+/* * Slide in animation with delay for each nav item */
 .slide-in-1 {
   animation: slide-in 0.4s linear 0.2s both;
 }
@@ -118,7 +118,7 @@ nav li:nth-of-type(5) {
     transform: translateX(0);
   }
 }
-/**Slide out animation with delay for each nav item**/
+/* * Slide out animation with delay for each nav item */
 .slide-out-1 {
   animation: slide-out 0.3s linear 0.5s both;
 }
@@ -142,7 +142,7 @@ nav li:nth-of-type(5) {
     transform: translateX(-100%);
   }
 }
-/**Menu Bars**/
+/* * Menu Bars */
 .menu-bars {
   cursor: pointer;
   display: inline;
@@ -172,7 +172,7 @@ nav li:nth-of-type(5) {
 .change .bar-3 {
   transform: rotate(45deg) translate(-6px, -8px);
 }
-/* --- Sections ------------------------------------ */
+/* --- Sections --- */
 section {
   color: var(--primaryColor);
   display: flex;
@@ -185,7 +185,7 @@ section {
   text-transform: uppercase;
 }
 section#home {
-  background-image: url("https://images.unsplash.com/photo-1581453904507-626ddb717f14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+  background-image: url('https://images.unsplash.com/photo-1581453904507-626ddb717f14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80');
   background-size: cover;
   background-position: center center;
 }
@@ -215,8 +215,7 @@ section#projects {
 section#contact {
   background-color: var(--navColor5);
 }
-
-/* Media Query: Large Smartphone (Vertical) */
+/* * Media Query: Large Smartphone (Vertical) */
 @media (max-width: 576px) {
   section#home a {
     top: 1rem;
@@ -236,7 +235,7 @@ section#contact {
     margin: 0 1rem;
   }
   section#home {
-    background-image: url("https://images.unsplash.com/photo-1526495124232-a04e1849168c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZHViYWl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-image: url('https://images.unsplash.com/photo-1526495124232-a04e1849168c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZHViYWl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
     background-position: center center;
   }
